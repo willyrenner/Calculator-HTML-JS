@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div id="output" class="output"></div>
+		<div class="buttons">
+			<button onclick="inserir('+')" class="operador">+</button>
+			<button onclick="inserir('-')" class="operador">-</button>
+			<button onclick="inserir('*')" class="operador">×</button>
+			<button onclick="inserir('/')" class="operador">÷</button>
+
+			<button onclick="inserir('7')">7</button>
+			<button onclick="inserir('8')">8</button>
+			<button onclick="inserir('9')">9</button>
+
+			<button onclick="inserir('4')">4</button>
+			<button onclick="inserir('5')">5</button>
+			<button onclick="inserir('6')">6</button>
+
+			<button onclick="inserir('1')">1</button>
+			<button onclick="inserir('2')">2</button>
+			<button onclick="inserir('3')">3</button>
+
+			<button onclick="inserir('0')">0</button>
+			<button onclick="inserir('.')" data-action="decimal">•</button>
+			<button onclick="limpar()" data-action="limpar" class="operador">C</button>
+			<button onclick="calcular()" class="igual">=</button>
+		</div>
+	</div>
+</body>
+</html>
